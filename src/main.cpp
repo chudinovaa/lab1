@@ -3,9 +3,9 @@
 
 int main()
 {
-  auto data = read_file("../etc/abc.txt");
+  auto data = read_file("abc.txt");
   for(auto &line : data)
     line = sort(line);
-  write_to_file("./sorted.txt", data);
+  write_to_file("sorted.txt", data);
   return 0;
 }
