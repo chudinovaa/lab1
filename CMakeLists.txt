@@ -12,6 +12,7 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         $<TARGET_FILE_DIR:${PROJECT_NAME}>/abc.txt)
 
 enable_testing()
+find_package(Git REQUIRED)
 include(cmake_macros/load_gtest.cmake)
 find_package(Threads REQUIRED)
 add_subdirectory(test)
